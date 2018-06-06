@@ -1,0 +1,28 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+#form1{
+    grid-column:3/7;
+    border: 2px solid red;
+    padding: 0px 54px;
+    box-sizing: border-box;
+    border-radius: 17px;
+    background-color: burlywood;
+}
+input{
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 25px;
+    padding: 3px;
+    border:2px solid blue;
+}
+label{
+    font-size: 20px;
+}
+button{
+    border-radius: 10px;
+    outline: none;
+    border: 0px;
+}

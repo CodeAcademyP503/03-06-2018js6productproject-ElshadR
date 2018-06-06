@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleRegistration.css">
+    <script src="js/javaScriptRegistration.js"></script>
+</head>
+
+<body>
+    <form id="form1" action="#">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" required>
+        <br>
+        <label for="password">Password</label>
+        <button id="password1" onclick="showPassword()" style="margin-left:196px; margin-bottom:5px;">show</button>
+        <br>
+        <input type="password" id="password">
+        <br>
+        <label for="passwordrew">Password</label>
+        <button id="password2" onclick="showPasswordRew()" style="margin-left:196px; margin-bottom:5px;">show</button>
+        <br>
+        <input type="password" id="passwordrew">
+        <br>
+        <input type="button" onclick="create()" value="SEND" style="cursor:pointer;">
+        <input type="submit" onclick="changePage('login.html?#')" value="Log in" style="cursor:pointer;">
+        <br>
+        <input type="submit" onclick="clearLStorege()" value="Claer localStorage" style="cursor:pointer;">
+    </form>
+</body>
+
+</html>

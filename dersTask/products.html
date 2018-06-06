@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleProducts.css">
+</head>
+
+<body>
+
+    <div id="secound">
+        <div>
+            <span id="user" style="font-size:25px;"></span>
+        </div>
+        <div>
+            <button style="height:30px;" onclick="changePage()">Sell</button>
+            <button style="height:30px;" onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+    <script src="js/javaScriptProducts.js"></script>
+    <script>
+        let person ;
+        if (localStorage.User != null) {
+            person = JSON.parse(localStorage.User)
+            document.getElementById("user").innerText = person.name;
+        }
+    </script>
+</body>
+
+</html>
